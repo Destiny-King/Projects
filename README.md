@@ -1,6 +1,9 @@
 # springboot-vue-demo
 
+springboot+vue框架练手项目
+
 ## Project setup
+
 ```
 npm install
 ```
@@ -15,5 +18,3 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
