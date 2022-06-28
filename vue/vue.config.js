@@ -4,10 +4,10 @@ module.exports = {
         port: 9876,
         proxy: {
             '/api': {
-                target: 'http://localhost:9090',//代理的目标地址
+                target: 'http://localhost:9090',  //代理的目标地址
                 changeOrigin: true,//是否设置同源
                 pathRewrite: {
-                    '/api': ''//选择忽略拦截器里面的单词
+                    '/api': ''  //选择忽略拦截器里面的单词
                 }
             }
         }
