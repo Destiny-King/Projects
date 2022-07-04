@@ -1,4 +1,3 @@
-.DS_Store
 node_modules
 /dist
 
@@ -7,17 +6,44 @@ node_modules
 .env.local
 .env.*.local
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
 # Editor directories and files
-.idea
+.idea/
 .vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.ipr
+*.iml
+*.iws
+
+# Compiled class file
+*.class
+
+# Maven
+target/
+
+# Gradle
+build
+.gradle
+
+# Log file
+*.log
+log/
+
+# out
+**/out/
+
+# Mac
+.DS_Store
+
+# others
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+*.pid
+*.orig
+temp/
