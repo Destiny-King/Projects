@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.arraysquare.ArraySquare;
+import com.wym.algorithm.minsubarrayLen.MinSubArrayLen;
 
 public class MainAlgorithm {
 
@@ -20,11 +20,18 @@ public class MainAlgorithm {
 //		System.out.println(ret);
 
 		//3、有序数组的平方
-		ArraySquare arraySquare = new ArraySquare();
-		int[] nums = {-4, -1, 0, 3, 10};
-		int[] ret = arraySquare.sortedSquares(nums);
-		for (int i : ret) {
-			System.out.print(i + " ");
-		}
+//		ArraySquare arraySquare = new ArraySquare();
+//		int[] nums = {-4, -1, 0, 3, 10};
+//		int[] ret = arraySquare.sortedSquares(nums);
+//		for (int i : ret) {
+//			System.out.print(i + " ");
+//		}
+
+		//4、长度最小的子数组
+		MinSubArrayLen minSubArrayLen = new MinSubArrayLen();
+		int[] nums = {2, 3, 1, 2, 4, 3};
+		int s = 7;
+		int ret = minSubArrayLen.minSubArrayLen(nums, s);
+		System.out.println(ret);
 	}
 }
