@@ -23,8 +23,8 @@ public class MainAlgorithm {
 		ArraySquare arraySquare = new ArraySquare();
 		int[] nums = {-4, -1, 0, 3, 10};
 		int[] ret = arraySquare.sortedSquares(nums);
-		for (int i = 0; i < ret.length; i++) {
-			System.out.print(ret[i] + " ");
+		for (int i : ret) {
+			System.out.print(i + " ");
 		}
 	}
 }
