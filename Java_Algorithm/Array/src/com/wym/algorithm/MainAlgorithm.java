@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.removeelement.RemoveElement;
+import com.wym.algorithm.arraysquare.ArraySquare;
 
 public class MainAlgorithm {
 
@@ -13,10 +13,18 @@ public class MainAlgorithm {
 //		System.out.println(ret);
 
 		//2、移除元素
-		RemoveElement removeElement = new RemoveElement();
-		int[] nums = {0, 1, 2, 2, 3, 0, 4, 2};
-		int val = 2;
-		int ret = removeElement.removeElement(nums, val);
-		System.out.println(ret);
+//		RemoveElement removeElement = new RemoveElement();
+//		int[] nums = {0, 1, 2, 2, 3, 0, 4, 2};
+//		int val = 2;
+//		int ret = removeElement.removeElement(nums, val);
+//		System.out.println(ret);
+
+		//3、有序数组的平方
+		ArraySquare arraySquare = new ArraySquare();
+		int[] nums = {-4, -1, 0, 3, 10};
+		int[] ret = arraySquare.sortedSquares(nums);
+		for (int i = 0; i < ret.length; i++) {
+			System.out.print(ret[i] + " ");
+		}
 	}
 }
