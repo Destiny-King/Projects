@@ -1,4 +1,4 @@
-package com.wym.algorithm.binarysearch;
+package com.wym.algorithm.binarySearch;
 
 public class BinarySearch {
 	public int search(int[] nums, int target) {

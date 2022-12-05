@@ -1,4 +1,4 @@
-package com.wym.algorithm.spiralmatrix;
+package com.wym.algorithm.spiralMatrix;
 
 public class SpiralMatrix {
 	public int[][] generateMatrix(int n) {

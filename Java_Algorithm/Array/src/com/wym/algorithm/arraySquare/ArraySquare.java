@@ -1,4 +1,4 @@
-package com.wym.algorithm.arraysquare;
+package com.wym.algorithm.arraySquare;
 
 public class ArraySquare {
 

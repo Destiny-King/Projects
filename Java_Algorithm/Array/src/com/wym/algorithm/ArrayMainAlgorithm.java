@@ -1,8 +1,8 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.spiralmatrix.SpiralMatrix;
+import com.wym.algorithm.spiralMatrix.SpiralMatrix;
 
-public class MainAlgorithm {
+public class ArrayMainAlgorithm {
 
 	public static void main(String[] args) {
 		//1、二分查找

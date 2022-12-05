@@ -1,4 +1,4 @@
-package com.wym.algorithm.minsubarrayLen;
+package com.wym.algorithm.minSubArrayLen;
 
 public class MinSubArrayLen {
 	public int minSubArrayLen(int[] nums, int s) {

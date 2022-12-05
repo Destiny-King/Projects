@@ -1,4 +1,4 @@
-package com.wym.algorithm.removeelement;
+package com.wym.algorithm.removeElement;
 
 public class RemoveElement {
 	public int removeElement(int[] nums, int val) {
