@@ -1,7 +1,7 @@
 package com.wym.algorithm;
 
 import com.wym.algorithm.list.ListNode;
-import com.wym.algorithm.reverseList.ReverseList;
+import com.wym.algorithm.swapPairs.SwapPairs;
 
 public class ListMainAlgorithm {
 	public static void main(String[] args) {
@@ -28,8 +28,13 @@ public class ListMainAlgorithm {
 //		System.out.println(ret2);
 
 		//3、翻转链表
-		ReverseList reverseList = new ReverseList();
-		ListNode node = reverseList.reverseList(head);
+//		ReverseList reverseList = new ReverseList();
+//		ListNode node = reverseList.reverseList(head);
+//		System.out.println(node.val);
+
+		//4、两两交换链表中的节点
+		SwapPairs swapPairs = new SwapPairs();
+		ListNode node = swapPairs.swapPaird(head);
 		System.out.println(node.val);
 	}
 }
