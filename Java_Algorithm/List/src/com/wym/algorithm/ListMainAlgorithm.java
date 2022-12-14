@@ -1,7 +1,7 @@
 package com.wym.algorithm;
 
 import com.wym.algorithm.list.ListNode;
-import com.wym.algorithm.swapPairs.SwapPairs;
+import com.wym.algorithm.removeNthFromEnd.RemoveNthFromEnd;
 
 public class ListMainAlgorithm {
 	public static void main(String[] args) {
@@ -33,8 +33,15 @@ public class ListMainAlgorithm {
 //		System.out.println(node.val);
 
 		//4、两两交换链表中的节点
-		SwapPairs swapPairs = new SwapPairs();
-		ListNode node = swapPairs.swapPaird(head);
+//		SwapPairs swapPairs = new SwapPairs();
+//		ListNode node = swapPairs.swapPaird(head);
+//		System.out.println(node.val);
+
+		//5、删除链表的倒数第N个节点
+		RemoveNthFromEnd removeNthFromEnd = new RemoveNthFromEnd();
+		int n = 2;
+		ListNode node = removeNthFromEnd.removeNthFromEnd(head, n);
 		System.out.println(node.val);
+		listNode.showList(head);
 	}
 }
