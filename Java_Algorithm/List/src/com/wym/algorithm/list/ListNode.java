@@ -17,8 +17,7 @@ public class ListNode {
 	}
 
 	//创建链表
-	public void initList(ListNode head) {
-		int[] nums = {1, 2, 3, 4, 5};
+	public void initList(ListNode head, int[] nums) {
 		ListNode cur = head;
 		for (int i = 1; i < nums.length; i++) {
 			ListNode node = new ListNode(nums[i]);
