@@ -12,7 +12,7 @@ public class DetectCycle {
 			fast = fast.next.next;
 			if (slow == fast) {
 				ListNode index1 = fast;
-				ListNode index2 = slow;
+				ListNode index2 = head;
 				while (index1 != index2) {
 					index1 = index1.next;
 					index2 = index2.next;
