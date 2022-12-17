@@ -35,4 +35,28 @@ public class ListNode {
 		}
 		System.out.println();
 	}
+
+	//创建环形链表
+	public ListNode createCycle(int n) {
+		//创建具有n个节点的循环链表,第i个节点对应的val=i
+		ListNode head = new ListNode(n);
+		//头插法，每次在链表头部插入节点
+		head.next = head;
+		for (int i = n - 1; i >= 1; i--) {
+			ListNode node = new ListNode(i);
+			node.next = head.next;
+			head.next = node;
+		}
+		return head.next; //根据节点意义，确定谁才是最终的头结点
+	}
+
+	//显示环形链表
+	public void showCycle(ListNode head) {
+		ListNode cur = head;
+		while (cur.next != head) {
+			System.out.print(cur.val + " ");
+			cur = cur.next;
+		}
+		System.out.println(cur.val);
+	}
 }
