@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.intersection.Intersection;
+import com.wym.algorithm.isHappy.IsHappy;
 
 public class HashMainAlgorithm {
 
@@ -13,12 +13,18 @@ public class HashMainAlgorithm {
 //		System.out.println(anagram);
 
 		//2、两个数组的交集
-		Intersection intersection = new Intersection();
-		int[] nums1 = {4, 9, 5};
-		int[] nums2 = {9, 4, 9, 8, 4};
-		int[] res = intersection.intersection(nums1, nums2);
-		for (int i = 0; i < res.length; i++) {
-			System.out.println(res[i]);
-		}
+//		Intersection intersection = new Intersection();
+//		int[] nums1 = {4, 9, 5};
+//		int[] nums2 = {9, 4, 9, 8, 4};
+//		int[] res = intersection.intersection(nums1, nums2);
+//		for (int i = 0; i < res.length; i++) {
+//			System.out.println(res[i]);
+//		}
+
+		//3、快乐数
+		IsHappy isHappy = new IsHappy();
+		int n = 19;
+		boolean happy = isHappy.isHappy(n);
+		System.out.println(happy);
 	}
 }
