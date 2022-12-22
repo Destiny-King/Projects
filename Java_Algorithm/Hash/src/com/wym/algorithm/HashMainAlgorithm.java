@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.isHappy.IsHappy;
+import com.wym.algorithm.twoSum.TwoSum;
 
 public class HashMainAlgorithm {
 
@@ -22,9 +22,18 @@ public class HashMainAlgorithm {
 //		}
 
 		//3、快乐数
-		IsHappy isHappy = new IsHappy();
-		int n = 19;
-		boolean happy = isHappy.isHappy(n);
-		System.out.println(happy);
+//		IsHappy isHappy = new IsHappy();
+//		int n = 19;
+//		boolean happy = isHappy.isHappy(n);
+//		System.out.println(happy);
+
+		//4、两数之和
+		TwoSum twoSum = new TwoSum();
+		int[] nums = {2, 7, 11, 15};
+		int target = 9;
+		int[] sum = twoSum.twoSum(nums, target);
+		for (int i = 0; i < sum.length; i++) {
+			System.out.println(sum[i]);
+		}
 	}
 }
