@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.twoSum.TwoSum;
+import com.wym.algorithm.fourSumCount.FourSumCount;
 
 public class HashMainAlgorithm {
 
@@ -28,12 +28,21 @@ public class HashMainAlgorithm {
 //		System.out.println(happy);
 
 		//4、两数之和
-		TwoSum twoSum = new TwoSum();
-		int[] nums = {2, 7, 11, 15};
-		int target = 9;
-		int[] sum = twoSum.twoSum(nums, target);
-		for (int i = 0; i < sum.length; i++) {
-			System.out.println(sum[i]);
-		}
+//		TwoSum twoSum = new TwoSum();
+//		int[] nums = {2, 7, 11, 15};
+//		int target = 9;
+//		int[] sum = twoSum.twoSum(nums, target);
+//		for (int i = 0; i < sum.length; i++) {
+//			System.out.println(sum[i]);
+//		}
+
+		//5、四数相加
+		FourSumCount fourSumCount = new FourSumCount();
+		int[] nums1 = {1, 2};
+		int[] nums2 = {-2, -1};
+		int[] nums3 = {-1, 2};
+		int[] nums4 = {0, 2};
+		int sumCount = fourSumCount.fourSumCount(nums1, nums2, nums3, nums4);
+		System.out.println(sumCount);
 	}
 }
