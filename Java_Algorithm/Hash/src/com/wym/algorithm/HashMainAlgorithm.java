@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.fourSumCount.FourSumCount;
+import com.wym.algorithm.canConstruct.CanConstruct;
 
 public class HashMainAlgorithm {
 
@@ -37,12 +37,19 @@ public class HashMainAlgorithm {
 //		}
 
 		//5、四数相加
-		FourSumCount fourSumCount = new FourSumCount();
-		int[] nums1 = {1, 2};
-		int[] nums2 = {-2, -1};
-		int[] nums3 = {-1, 2};
-		int[] nums4 = {0, 2};
-		int sumCount = fourSumCount.fourSumCount(nums1, nums2, nums3, nums4);
-		System.out.println(sumCount);
+//		FourSumCount fourSumCount = new FourSumCount();
+//		int[] nums1 = {1, 2};
+//		int[] nums2 = {-2, -1};
+//		int[] nums3 = {-1, 2};
+//		int[] nums4 = {0, 2};
+//		int sumCount = fourSumCount.fourSumCount(nums1, nums2, nums3, nums4);
+//		System.out.println(sumCount);
+
+		//6、赎金信
+		CanConstruct canConstruct = new CanConstruct();
+		String ransomNote = "aa";
+		String magazine = "ab";
+		boolean b = canConstruct.canConstruct(ransomNote, magazine);
+		System.out.println(b);
 	}
 }
