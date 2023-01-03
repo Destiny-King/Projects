@@ -1,6 +1,8 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.canConstruct.CanConstruct;
+import com.wym.algorithm.threeSum.ThreeSum;
+
+import java.util.List;
 
 public class HashMainAlgorithm {
 
@@ -46,10 +48,22 @@ public class HashMainAlgorithm {
 //		System.out.println(sumCount);
 
 		//6、赎金信
-		CanConstruct canConstruct = new CanConstruct();
-		String ransomNote = "aa";
-		String magazine = "ab";
-		boolean b = canConstruct.canConstruct(ransomNote, magazine);
-		System.out.println(b);
+//		CanConstruct canConstruct = new CanConstruct();
+//		String ransomNote = "aa";
+//		String magazine = "ab";
+//		boolean b = canConstruct.canConstruct(ransomNote, magazine);
+//		System.out.println(b);
+
+		//7、三数之和
+		ThreeSum threeSum = new ThreeSum();
+		int[] nums = {-1, 0, 1, 2, -1, -4};
+		List<List<Integer>> lists = threeSum.threeSum(nums);
+		for (int i = 0; i < lists.size(); i++) {
+			List<Integer> item = lists.get(i);
+			for (int j = 0; j < item.size(); j++) {
+				System.out.print(item.get(j) + ",");
+			}
+			System.out.println();
+		}
 	}
 }
