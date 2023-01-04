@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.threeSum.ThreeSum;
+import com.wym.algorithm.fourSum.FourSum;
 
 import java.util.List;
 
@@ -55,11 +55,24 @@ public class HashMainAlgorithm {
 //		System.out.println(b);
 
 		//7、三数之和
-		ThreeSum threeSum = new ThreeSum();
-		int[] nums = {-1, 0, 1, 2, -1, -4};
-		List<List<Integer>> lists = threeSum.threeSum(nums);
-		for (int i = 0; i < lists.size(); i++) {
-			List<Integer> item = lists.get(i);
+//		ThreeSum threeSum = new ThreeSum();
+//		int[] nums = {-1, 0, 1, 2, -1, -4};
+//		List<List<Integer>> lists = threeSum.threeSum(nums);
+//		for (int i = 0; i < lists.size(); i++) {
+//			List<Integer> item = lists.get(i);
+//			for (int j = 0; j < item.size(); j++) {
+//				System.out.print(item.get(j) + ",");
+//			}
+//			System.out.println();
+//		}
+
+		//8、四数之和
+		FourSum fourSum = new FourSum();
+		int[] nums = {1, 0, -1, 0, -2, 2};
+		int target = 0;
+		List<List<Integer>> list = fourSum.fourSum(nums, target);
+		for (int i = 0; i < list.size(); i++) {
+			List<Integer> item = list.get(i);
 			for (int j = 0; j < item.size(); j++) {
 				System.out.print(item.get(j) + ",");
 			}
