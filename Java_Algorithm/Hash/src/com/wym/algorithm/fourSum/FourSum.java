@@ -19,7 +19,7 @@ public class FourSum {
 			}
 
 			for (int j = i + 1; j < nums.length; j++) {
-				if (j > 0 && nums[j - 1] == nums[j]) {
+				if (j > i + 1 && nums[j - 1] == nums[j]) {
 					continue;
 				}
 				int left = j + 1;
