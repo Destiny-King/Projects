@@ -11,5 +11,10 @@ public class StringMainAlgorithm {
 			System.out.print(c + ",");
 		}
 		System.out.println();
+
+		String str = "abcdefg";
+		int k = 2;
+		String reverseStr = reverseString.reverseStr(str, k);
+		System.out.println(reverseStr);
 	}
 }
