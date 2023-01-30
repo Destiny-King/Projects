@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.reverseWords.ReverseWords;
+import com.wym.algorithm.reverseString.ReverseString;
 
 public class StringMainAlgorithm {
 	public static void main(String[] args) {
@@ -25,9 +25,16 @@ public class StringMainAlgorithm {
 //		System.out.println(str);
 
 		//3、翻转字符串里的单词
-		ReverseWords reverseWords = new ReverseWords();
-		String s = "the sky is blue";
-		String words = reverseWords.reverseWords(s);
+//		ReverseWords reverseWords = new ReverseWords();
+//		String s = "the sky is blue";
+//		String words = reverseWords.reverseWords(s);
+//		System.out.println(words);
+
+		//4、左旋转字符串
+		ReverseString reverseString = new ReverseString();
+		String s = "abcdefg";
+		int n = 2;
+		String words = reverseString.reverseLeftWords(s, n);
 		System.out.println(words);
 	}
 }

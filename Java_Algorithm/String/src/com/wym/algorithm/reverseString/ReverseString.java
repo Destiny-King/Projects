@@ -30,4 +30,22 @@ public class ReverseString {
 		}
 		return new String(ch);
 	}
+
+	public String reverseLeftWords(String s, int n) {
+		int len = s.length();
+		StringBuilder sb = new StringBuilder(s);
+		reverseString(sb, 0, n - 1); //反转区间为前n的子串
+		reverseString(sb, n, len - 1);    //反转区间为n到末尾的子串
+		return sb.reverse().toString();        //反转整个字符串
+	}
+
+	public void reverseString(StringBuilder sb, int start, int end) {
+		while (start < end) {
+			char temp = sb.charAt(start);
+			sb.setCharAt(start, sb.charAt(end));
+			sb.setCharAt(end, temp);
+			start++;
+			end--;
+		}
+	}
 }
