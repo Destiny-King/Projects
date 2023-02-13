@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.strStr.StrStr;
+import com.wym.algorithm.repeatedSubstringPattern.RepeatedSubstringPattern;
 
 public class StringMainAlgorithm {
 	public static void main(String[] args) {
@@ -38,10 +38,16 @@ public class StringMainAlgorithm {
 //		System.out.println(words);
 
 		//5、实现strStr
-		StrStr strStr = new StrStr();
-		String haystack = "hello";
-		String needle = "ll";
-		int str = strStr.strStr(haystack, needle);
-		System.out.println(str);
+//		StrStr strStr = new StrStr();
+//		String haystack = "hello";
+//		String needle = "ll";
+//		int str = strStr.strStr(haystack, needle);
+//		System.out.println(str);
+
+		//6、重复的子字符串
+		RepeatedSubstringPattern repeatedSubstringPattern = new RepeatedSubstringPattern();
+		String s = "abab";
+		boolean b = repeatedSubstringPattern.repeatedSubstringPattern(s);
+		System.out.println(b);
 	}
 }
