@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.myStack.MyStack;
+import com.wym.algorithm.validParenthesis.ValidParenthesis;
 
 public class StackAQueueMainAlgorithm {
 
@@ -17,22 +17,28 @@ public class StackAQueueMainAlgorithm {
 //		System.out.println(empty);
 
 		//2、用队列实现栈
-		MyStack stack = new MyStack();
-		stack.push(1);
-		stack.push(2);
-		int top = stack.top();
-		System.out.println(top);
-		int pop = stack.pop();
-		System.out.println(pop);
-		stack.push(3);
-		stack.push(4);
-		int pop1 = stack.pop();
-		System.out.println(pop1);
-		int pop2 = stack.pop();
-		System.out.println(pop2);
-		int pop3 = stack.pop();
-		System.out.println(pop3);
-		boolean empty = stack.empty();
-		System.out.println(empty);
+//		MyStack stack = new MyStack();
+//		stack.push(1);
+//		stack.push(2);
+//		int top = stack.top();
+//		System.out.println(top);
+//		int pop = stack.pop();
+//		System.out.println(pop);
+//		stack.push(3);
+//		stack.push(4);
+//		int pop1 = stack.pop();
+//		System.out.println(pop1);
+//		int pop2 = stack.pop();
+//		System.out.println(pop2);
+//		int pop3 = stack.pop();
+//		System.out.println(pop3);
+//		boolean empty = stack.empty();
+//		System.out.println(empty);
+
+		//3、有效的括号
+		ValidParenthesis validParenthesis = new ValidParenthesis();
+		String s = "()[]{}";
+		boolean valid = validParenthesis.isValid(s);
+		System.out.println(valid);
 	}
 }
