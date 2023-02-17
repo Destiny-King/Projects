@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.validParenthesis.ValidParenthesis;
+import com.wym.algorithm.removeDuplicates.RemoveDuplicates;
 
 public class StackAQueueMainAlgorithm {
 
@@ -36,9 +36,15 @@ public class StackAQueueMainAlgorithm {
 //		System.out.println(empty);
 
 		//3、有效的括号
-		ValidParenthesis validParenthesis = new ValidParenthesis();
-		String s = "()[]{}";
-		boolean valid = validParenthesis.isValid(s);
-		System.out.println(valid);
+//		ValidParenthesis validParenthesis = new ValidParenthesis();
+//		String s = "()[]{}";
+//		boolean valid = validParenthesis.isValid(s);
+//		System.out.println(valid);
+
+		//4、删除字符串中的所有相邻重复项
+		RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+		String s = "abbaca";
+		String str = removeDuplicates.removeDuplicates(s);
+		System.out.println(str);
 	}
 }
