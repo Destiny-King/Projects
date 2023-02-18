@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.removeDuplicates.RemoveDuplicates;
+import com.wym.algorithm.evalRPN.EvalRPN;
 
 public class StackAQueueMainAlgorithm {
 
@@ -42,9 +42,15 @@ public class StackAQueueMainAlgorithm {
 //		System.out.println(valid);
 
 		//4、删除字符串中的所有相邻重复项
-		RemoveDuplicates removeDuplicates = new RemoveDuplicates();
-		String s = "abbaca";
-		String str = removeDuplicates.removeDuplicates(s);
-		System.out.println(str);
+//		RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+//		String s = "abbaca";
+//		String str = removeDuplicates.removeDuplicates(s);
+//		System.out.println(str);
+
+		//5、逆波兰表达式求值
+		EvalRPN evalRPN = new EvalRPN();
+		String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
+		int rpn = evalRPN.evalRPN(tokens);
+		System.out.println(rpn);
 	}
 }
