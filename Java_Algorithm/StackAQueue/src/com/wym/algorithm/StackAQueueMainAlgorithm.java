@@ -1,6 +1,6 @@
 package com.wym.algorithm;
 
-import com.wym.algorithm.maxSlidingWindow.MaxSlidingWindow;
+import com.wym.algorithm.topKFrequent.TopKFrequent;
 
 public class StackAQueueMainAlgorithm {
 
@@ -54,12 +54,21 @@ public class StackAQueueMainAlgorithm {
 //		System.out.println(rpn);
 
 		//6、滑动窗口最大值
-		MaxSlidingWindow maxSlidingWindow = new MaxSlidingWindow();
-		int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
-		int k = 3;
-		int[] slidingWindow = maxSlidingWindow.maxSlidingWindow(nums, k);
-		for (int i = 0; i < slidingWindow.length; i++) {
-			System.out.print(slidingWindow[i] + " ");
+//		MaxSlidingWindow maxSlidingWindow = new MaxSlidingWindow();
+//		int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+//		int k = 3;
+//		int[] slidingWindow = maxSlidingWindow.maxSlidingWindow(nums, k);
+//		for (int i = 0; i < slidingWindow.length; i++) {
+//			System.out.print(slidingWindow[i] + " ");
+//		}
+
+		//7、前k个高频元素
+		TopKFrequent topKFrequent = new TopKFrequent();
+		int[] nums = {1, 1, 1, 2, 2, 3};
+		int k = 2;
+		int[] frequent = topKFrequent.topKFrequent(nums, k);
+		for (int i = 0; i < frequent.length; i++) {
+			System.out.print(frequent[i] + " ");
 		}
 	}
 }
