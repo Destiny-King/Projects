@@ -6,21 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTree {
-	public TreeNode createTree(int[] nums, int index) {
-		if (index > nums.length - 1 || nums[index] == 0)
-			return null;
-		TreeNode node = new TreeNode(nums[index]);
-		node.left = createTree(nums, 2 * index + 1);
-		node.right = createTree(nums, 2 * index + 2);
-		return node;
-	}
-
-	public void printTree(List<Integer> list) {
-		for (int i = 0; i < list.size(); i++) {
-			System.out.print(list.get(i) + " ");
-		}
-		System.out.println();
-	}
 
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> result = new ArrayList<Integer>();
